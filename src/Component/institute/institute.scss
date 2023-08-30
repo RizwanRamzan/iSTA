@@ -1,0 +1,402 @@
+@import '../../GeneralStyle/variables.scss';
+@import '../../GeneralStyle/mixins.scss';
+
+.instituteContainer {
+    background-color: rgba(59, 125, 237, 0.05);
+    height: 83vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .instituteHeader {
+        width: 90%;
+
+        background-color: $primaryColor;
+        position: absolute;
+        border-radius: $radius;
+        top: -35px;
+        padding: 20px 0px;
+        display: flex;
+        justify-content: center;
+
+        .instituteSubHeader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+
+            .istaText {
+                color: #FFF;
+                font-family: $fontFamily;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin: 0px;
+            }
+
+            .explore {
+                color: #FFF;
+                text-align: right;
+                font-family: $fontFamily;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0px;
+            }
+        }
+    }
+
+
+    .institute-text-area {
+        display: flex;
+        justify-content: start;
+        width: 90%;
+
+        .institute-left {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0px 0px 0px 100px;
+            gap: 30px;
+
+            .institute-text {
+                color: #3B7DED;
+                font-family: Helvetica;
+                font-size: 45px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin: 0px;
+            }
+
+            .buttons {
+                display: flex;
+                flex-direction: column;
+
+                .srevice {
+                    color: #3B7DED;
+                    font-family: $fontFamily;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin: 0px;
+                }
+
+
+                display: flex;
+                gap: 10px;
+
+                button {
+                    border: 1px solid $primaryColor;
+                    color: $primaryColor;
+                    border-radius: $radius;
+                    background-color: transparent;
+                    height: 30px;
+                    padding: 5px 20px;
+                    cursor: pointer;
+                }
+            }
+
+            .institute-des {
+                color: #3B7DED;
+                text-align: justify;
+                font-family: $fontFamily;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 27px;
+                margin: 0;
+                /* 135% */
+            }
+        }
+
+        .institute-right {
+            width: 50%;
+            @include flexCenter;
+            // padding: 0px 100px;
+            align-items: center;
+
+
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// solution 
+
+
+.solutionContainer {
+    background: rgba(43, 162, 76, 0.05);
+    height: 83vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+
+    .instituteHeader {
+        width: 90%;
+
+        background-color: $secondaryColor;
+        position: absolute;
+        border-radius: $radius;
+        top: -35px;
+        padding: 20px 0px;
+        display: flex;
+        justify-content: center;
+
+        .instituteSubHeader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+
+            .istaText {
+                color: #FFF;
+                font-family: $fontFamily;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin: 0px;
+            }
+
+            .explore {
+                color: #FFF;
+                text-align: right;
+                font-family: $fontFamily;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0px;
+            }
+        }
+    }
+
+
+    .institute-text-area {
+        display: flex;
+        justify-content: start;
+        width: 90%;
+
+        .institute-left {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0px 0px 0px 100px;
+            gap: 30px;
+
+            .institute-text {
+                color: $secondaryColor;
+                font-family: Helvetica;
+                font-size: 45px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin: 0px;
+            }
+
+            .buttons {
+                display: flex;
+                flex-direction: column;
+
+                .srevice {
+                    color: $secondaryColor;
+                    font-family: $fontFamily;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin: 0px;
+                }
+
+
+                display: flex;
+                gap: 10px;
+
+                button {
+                    border: 1px solid $secondaryColor;
+                    color: $secondaryColor;
+                    border-radius: $radius;
+                    background-color: transparent;
+                    height: 30px;
+                    padding: 5px 20px;
+                    cursor: pointer;
+                }
+            }
+
+            .institute-des {
+                color: $secondaryColor;
+                text-align: justify;
+                font-family: $fontFamily;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 27px;
+                margin: 0;
+                /* 135% */
+            }
+        }
+
+        .institute-right {
+            width: 50%;
+            @include flexCenter;
+            // padding: 0px 100px;
+            align-items: center;
+
+
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+
+// shop 
+
+
+.shopContainer {
+    background: rgba(228, 62, 43, 0.05);
+    height: 83vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+
+
+    .instituteHeader {
+        width: 90%;
+
+        background-color: $thirdColor;
+        position: absolute;
+        border-radius: $radius;
+        top: -35px;
+        padding: 20px 0px;
+        display: flex;
+        justify-content: center;
+
+        .instituteSubHeader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+
+            .istaText {
+                color: #FFF;
+                font-family: $fontFamily;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin: 0px;
+            }
+
+            .explore {
+                color: #FFF;
+                text-align: right;
+                font-family: $fontFamily;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin: 0px;
+            }
+        }
+    }
+
+
+    .institute-text-area {
+        display: flex;
+        justify-content: start;
+        width: 90%;
+
+        .institute-left {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0px 0px 0px 100px;
+            gap: 30px;
+
+            .institute-text {
+                color: $thirdColor;
+                font-family: Helvetica;
+                font-size: 45px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin: 0px;
+            }
+
+            .buttons {
+                display: flex;
+                flex-direction: column;
+
+                .srevice {
+                    color: $thirdColor;
+                    font-family: $fontFamily;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin: 0px;
+                }
+
+
+                display: flex;
+                gap: 10px;
+
+                button {
+                    border: 1px solid $thirdColor;
+                    color: $thirdColor;
+                    border-radius: $radius;
+                    background-color: transparent;
+                    height: 30px;
+                    padding: 5px 20px;
+                    cursor: pointer;
+
+                }
+            }
+
+            .institute-des {
+                color: $thirdColor;
+                text-align: justify;
+                font-family: $fontFamily;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 27px;
+                margin: 0;
+                /* 135% */
+            }
+        }
+
+        .institute-right {
+            width: 50%;
+            @include flexCenter;
+            // padding: 0px 100px;
+            align-items: center;
+
+
+            img {
+                width: 80%;
+            }
+        }
+    }
+}

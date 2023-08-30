@@ -1,0 +1,67 @@
+@import '../../GeneralStyle/variables.scss';
+@import '../../GeneralStyle/mixins.scss';
+
+
+.headerMain {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: #ffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    .header {
+        width: 90%;
+        @include flexHorizontal;
+        gap: 60px;
+        height: 80px;
+
+
+        .left-side {
+            @include flexHorizontal;
+            width: 50%;
+            gap: 50px;
+            padding: 25px 0px;
+        }
+
+        .right-side {
+            width: 50%;
+            @include flexHorizontal;
+            // justify-content: end;
+            gap: 50px;
+
+            .tabs {
+                @include flexHorizontal;
+                gap: 50px;
+                justify-content: center;
+                width: 100%;
+
+                p {
+                    color: #414042;
+                    font-family: $fontFamily;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin: 0px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .ant-input-affix-wrapper .ant-input-suffix {
+            height: 80% !important;
+            padding-left: 10px !important;
+            border-left: 1px solid rgba(0, 0, 0, 0.20) !important;
+        }
+    }
+
+}

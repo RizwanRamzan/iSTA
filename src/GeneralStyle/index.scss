@@ -1,0 +1,51 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+
+.ant-input-affix-wrapper {
+    background: #F2F2F2 !important;
+    height: 50px !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 10px !important;
+    @include flexHorizontal;
+}
+
+
+input {
+    background: #F2F2F2 !important;
+
+}
+
+.layout{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loginButton {
+    width: 150px;
+    height: 50px;
+    margin: 0px;
+    border-top: 1px solid #E43E2B;
+    border-left: 1px solid #3B7DED;
+    border-right: 1px solid #F0B501;
+    border-bottom: 1px solid #2BA24C;
+    border-radius: 10px;
+    color: #414042;
+    text-align: center;
+    font-family: $fontFamily;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+.activehome{
+    border-bottom: 3px solid gray;
+}
+

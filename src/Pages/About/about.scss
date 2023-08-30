@@ -1,0 +1,69 @@
+@import '../../GeneralStyle/mixins.scss';
+@import '../../GeneralStyle/variables.scss';
+
+
+.about-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    .about {
+        background-image: url(../../assets/svg/about.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            color: #FFF;
+            font-family: $fontFamily;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: center;
+        }
+
+    }
+
+    .about-content {
+        background-color: rgba(0, 0, 0, 0.02);
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .about-text-box {
+            width: 80%;
+
+            .about-box {
+
+                .about-heading {
+                    font-family: $fontFamily;
+                    font-size: 26px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    color: #414042;
+
+                }
+
+                .about-text {
+                    font-family: $fontFamily;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: #414042;
+                    padding: 10px 0px;
+                }
+            }
+        }
+
+    }
+}

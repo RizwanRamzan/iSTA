@@ -1,0 +1,115 @@
+@import '../../GeneralStyle/variables.scss';
+@import '../../GeneralStyle/mixins.scss';
+
+
+.footer {
+    @include flexCenter;
+    width: 100%;
+    background-image: url(../../assets/svg/footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+
+
+    .footer-box {
+        width: 80%;
+        @include flexCenter;
+        flex-direction: column;
+        align-items: center;
+
+        .footer-img {
+            padding: 30px 0px;
+
+            img {
+                width: 250px;
+            }
+        }
+
+        .footer-row {
+            width: 100%;
+            border-top: 1px solid rgba(255, 255, 255, 0.40);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+            padding: 20px 0px;
+
+            .footer-title {
+                color: #FFF;
+                font-family: $fontFamily;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            .footer-sub-title {
+                color: #FFF;
+                font-family: $fontFamily;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 130%;
+                /* 32.5px */
+            }
+        }
+
+        .social-box {
+            width: 100%;
+            padding: 30px 0px;
+
+            p {
+                color: #FFF;
+                font-family: $fontFamily;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin: 0px;
+            }
+
+            .social-icons-list {
+
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                flex-wrap: wrap;
+
+
+                .socila-icon {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: 1px solid $light;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+
+        }
+
+        .footer-end {
+            width: 100%;
+            padding: 20px 0px;
+            border-top: 1px solid rgba(255, 255, 255, 0.40);
+
+            p {
+                color: #FFF;
+                text-align: center;
+                font-family: $fontFamily;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 130%;
+                /* 26px */
+            }
+        }
+
+
+    }
+
+
+}
