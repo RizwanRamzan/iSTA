@@ -1,0 +1,47 @@
+@import "../../GeneralStyle/variables.scss";
+
+.our_success_insitute {
+  background-image: url("../../assets/svg/success-map.svg");
+  background-repeat: no-repeat;
+  padding: 2rem 12rem;
+  margin: 3rem 0;
+  @media screen and (max-width: 968px) {
+    padding: 2rem 1rem;
+  }
+  .head_insitute {
+    text-align: center;
+    padding-bottom: 2rem;
+    h1 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: 700;
+      color: $primaryColor;
+    }
+    p {
+      margin: 0;
+      font-weight: 700;
+      font-size: 20px;
+      color: #414042;
+    }
+  }
+  .success_counter {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    @media screen and (max-width: 600px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    h1 {
+      margin: 0;
+      font-weight: 800;
+    }
+    p {
+      margin: 0;
+      color: $primaryColor;
+    }
+  }
+}

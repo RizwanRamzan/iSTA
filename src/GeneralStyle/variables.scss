@@ -1,11 +1,10 @@
-
 // Colors Of App
-$primaryColor: #3B7DED;
-$secondaryColor: #2BA24C;
-$thirdColor: #E43E2B;
-$forthColor: #F76D00;
+$primaryColor: #3b7ded;
+$secondaryColor: #2ba24c;
+$thirdColor: #e43e2b;
+$forthColor: #f76d00;
 $whiteTextColor: #fff;
-$errorColor: #EB5757;
+$errorColor: #eb5757;
 $dark: #271100;
 $gray3: #828282;
 $gray2: #4f4f4f;
@@ -27,12 +26,10 @@ $spacing-md: 35px;
 $spacing-lg: 32px;
 $lineColor: #68584c;
 
-
 // Box Shadow
 $shadow: 2px 2px 2rem 2px rgba(128, 128, 128, 0.103);
 // header height
 $headerHeight: 82px;
-
 
 // Colors With Opacity
 $primaryColorWithOpacity: rgba(80, 200, 120, 0.1);
@@ -41,27 +38,22 @@ $secondaryColorWithOpacity: rgba(13, 33, 20, 0.1);
 $thirdColorWithOpacity: rgba(153, 166, 157, 0.1);
 $errorColorWithOpacity: rgba(235, 87, 87, 0.1);
 
-// Background Color 
-$backgroundColor: #E0E0E0;
+// Background Color
+$backgroundColor: #e0e0e0;
 
 // Border
-$borderColor: #E4EDE7;
+$borderColor: #e4ede7;
 $border: 1px solid $borderColor;
 
-
-// Border Radius 
+// Border Radius
 $primaryRadius: 15px;
 $secondaryRadius: 30px;
 // App width Variable
 $desktopWidth: 1200px;
 
-
 // font family
 
-$fontFamily: 'Nunito Sans', sans-serif;
-
-
-
+$fontFamily: "Nunito Sans", sans-serif;
 
 $radius: 10px;
 
@@ -77,14 +69,11 @@ $secondryFontSize: 14px;
 $thirdFontSize: 16px;
 $primaryHeadingFontSize: 32px;
 
-
-
 // Heights and width of input and btns
 $primaryHeight: 50px;
 $primaryWidth: 180px;
 
-
-// Media Querys 
+// Media Querys
 
 $tabQuery: 780px;
 $mobileQuery: 540px;
@@ -93,14 +82,11 @@ $mobileQuery: 540px;
 $responsivePadding: 5px;
 $paddingSideOnly: 0px 10px;
 
-
-
 @mixin breakpoint($point) {
-    @if $point ==md {
-
-        // 768px
-        @media (min-width: 48rem) {
-            @content;
-        }
+  @if $point ==md {
+    // 768px
+    @media (min-width: 48rem) {
+      @content;
     }
+  }
 }

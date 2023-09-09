@@ -1,0 +1,62 @@
+@import "../../../GeneralStyle/variables.scss";
+
+.it_connect_now {
+  background-color: #fef4f5;
+  width: 80%;
+  margin-top: 4rem !important;
+  margin-bottom: 3rem !important;
+  border-radius: 10px;
+  margin: auto;
+  @media screen and (max-width: 620px) {
+    width: 95%;
+  }
+  .it_connect_now_connect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    @media screen and (max-width: 620px) {
+      padding: 1rem 0.5rem;
+    }
+    .it_connect_now_connect_left {
+      h1 {
+        margin: 0;
+        color: $thirdColor;
+        @media screen and (max-width: 968px) {
+          font-size: 20px;
+        }
+        @media screen and (max-width: 414px) {
+          font-size: 14px;
+        }
+        @media screen and (max-width: 390px) {
+          font-size: 11px;
+        }
+      }
+      p {
+        margin: 0;
+        color: #414042;
+        font-weight: 400;
+        @media screen and (max-width: 414px) {
+          font-size: 11px;
+        }
+      }
+    }
+    .it_connect_now_connect_right {
+      margin: 0;
+      .it_connect {
+        background-color: $thirdColor;
+        padding: 10px 80px;
+        color: white;
+        border-radius: 10px;
+        font-weight: 700;
+        cursor: pointer;
+        @media screen and (max-width: 968px) {
+          padding: 10px 30px;
+        }
+        @media screen and (max-width: 620px) {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

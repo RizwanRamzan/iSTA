@@ -1,0 +1,65 @@
+@import "../../GeneralStyle/variables.scss";
+
+.diploma {
+  background-color: #f5f8fe;
+  margin: 4rem 0;
+  padding: 2rem 0;
+  .diploma__content {
+    h1 {
+      color: $primaryColor;
+      text-align: center;
+      @media screen and (max-width: 540px) {
+        font-size: 22px;
+      }
+    }
+    .diploma__cards {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      width: 80%;
+      margin: auto;
+      @media screen and (max-width: 968px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media screen and (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .diploma_card_wrapper {
+        .diploma_card {
+          background-color: white;
+          padding: 2rem;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          box-shadow: $shadow;
+          img {
+            width: 100%;
+            border-radius: 10px;
+          }
+          p {
+            margin: 0;
+            padding-top: 10px;
+            font-size: 13px;
+          }
+          h3 {
+            margin: 0;
+            font-weight: 700;
+          }
+        }
+        .read_more_btn {
+          background-color: $primaryColor;
+          height: 55px;
+          width: 100%;
+          border: none;
+          color: #f5f8fe;
+          font-size: 20px;
+          font-weight: 700;
+          cursor: pointer;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+      }
+    }
+  }
+}

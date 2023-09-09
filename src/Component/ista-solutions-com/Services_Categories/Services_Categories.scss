@@ -1,0 +1,44 @@
+@import "../../../GeneralStyle/variables.scss";
+
+.Services_Categories {
+  margin-bottom: 3rem;
+  .Services_Categories_content {
+    width: 80%;
+    margin: auto;
+    padding-top: 0.5rem;
+    h2 {
+      text-align: center;
+      color: $secondaryColor;
+      padding-bottom: 2rem;
+    }
+    .Services_Categories_cards {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      @media screen and (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+      @media screen and (max-width: 540px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        // gap: 2rem;
+      }
+      .Services_Categories_card {
+        width: 29%;
+        text-align: center;
+        padding-top: 6rem;
+        padding-bottom: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0px 4px 50px 0px #00000026;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+        img {
+          width: 30%;
+        }
+      }
+    }
+  }
+}

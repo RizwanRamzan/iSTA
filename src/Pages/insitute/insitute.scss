@@ -1,0 +1,80 @@
+@import "../../GeneralStyle/variables.scss";
+
+.insitute {
+  background-color: $primaryColor;
+  display: flex;
+  padding: 85px 127px;
+  gap: 5rem;
+  @media screen and (max-width: 968px) {
+    padding: 85px 45px;
+    gap: 3rem;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 85px 20px;
+  }
+  .insitute_left {
+    width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+      color: $whiteTextColor;
+      line-height: 65px;
+      margin: 0;
+      @media screen and (max-width: 968px) {
+        font-size: 26px;
+        line-height: 40px;
+      }
+    }
+    p {
+      color: $whiteTextColor;
+    }
+    .insitute__buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 3rem;
+      @media screen and (max-width: 968px) {
+        margin-bottom: 2rem;
+      }
+      button {
+        height: 40px;
+        padding: 0 30px;
+        border-radius: 10px;
+        border: 1px solid $whiteTextColor;
+        background: transparent;
+        color: $whiteTextColor;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+        transition: 0.5s ease-in-out;
+        &:hover {
+          background-color: $whiteTextColor;
+          color: $primaryColor;
+        }
+      }
+    }
+    .insitute_text {
+      font-size: 14px;
+      font-weight: 300;
+      margin: 0;
+    }
+  }
+  .insitute_right {
+    display: flex;
+    width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.start_learning_with_ista {
+  text-align: center;
+  color: $primaryColor;
+}

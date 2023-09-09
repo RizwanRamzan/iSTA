@@ -1,0 +1,60 @@
+@import "../../../GeneralStyle/variables.scss";
+
+.connect_now {
+  background-color: #f4faf6;
+  width: 80%;
+  margin-top: 4rem !important;
+  margin-bottom: 3rem !important;
+  border-radius: 10px;
+  margin: auto;
+  @media screen and (max-width: 620px) {
+    width: 95%;
+  }
+  .connect_now_connect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+    @media screen and (max-width: 620px) {
+      padding: 1rem 0.5rem;
+    }
+
+    .connect_now_connect_left {
+      h1 {
+        margin: 0;
+        color: $secondaryColor;
+        @media screen and (max-width: 968px) {
+          font-size: 20px;
+        }
+        @media screen and (max-width: 414px) {
+          font-size: 14px;
+        }
+      }
+      p {
+        margin: 0;
+        color: #414042;
+        font-weight: 400;
+        @media screen and (max-width: 414px) {
+          font-size: 11px;
+        }
+      }
+    }
+    .connect_now_connect_right {
+      margin: 0;
+      .connect {
+        background-color: $secondaryColor;
+        padding: 10px 80px;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        @media screen and (max-width: 968px) {
+          padding: 10px 30px;
+        }
+        @media screen and (max-width: 620px) {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

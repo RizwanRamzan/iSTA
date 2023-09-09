@@ -1,0 +1,9 @@
+@import "../../GeneralStyle/variables.scss";
+
+.wrapper {
+  background-color: $primaryColor;
+  width: 100%;
+  text-align: center;
+  color: $whiteTextColor;
+  padding: 2rem 0;
+}

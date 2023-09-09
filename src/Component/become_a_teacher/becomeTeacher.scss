@@ -1,0 +1,58 @@
+@import "../../GeneralStyle/variables.scss";
+
+.becometeacher {
+  background-color: #f5f8fe;
+  margin-bottom: 3rem;
+  .becomeTeacher_content {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 4rem 0;
+    @media screen and (max-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: 90%;
+    }
+    .becomeTeacher_content_left {
+      width: 50%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      .becomeTeacher_content_left_content {
+        padding: 5rem 0;
+        h1 {
+          color: $primaryColor;
+          font-size: 28px;
+          font-weight: 700;
+        }
+        p {
+          font-size: 12px;
+          padding-right: 27px;
+          color: #414042;
+        }
+        .apply_now {
+          height: 45px;
+          padding: 0 80px;
+          border: none;
+          background-color: $primaryColor;
+          color: $whiteTextColor;
+          font-size: 16px;
+          font-weight: 700;
+          border-radius: 6px;
+          margin-top: 3rem;
+        }
+      }
+    }
+    .becomeTeacher_content_right {
+      width: 50%;
+      display: flex;
+      margin-left: auto;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

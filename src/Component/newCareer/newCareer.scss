@@ -1,0 +1,27 @@
+@import "../../GeneralStyle/variables.scss";
+
+.new_career {
+  background-color: #f5f8fe;
+  width: 75%;
+  margin: 3rem auto !important;
+  text-align: center;
+  padding: 2rem 0;
+  border-radius: 10px;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+  .new_career_h1 {
+    margin: 0;
+    color: $primaryColor;
+    @media screen and (max-width: 768px) {
+      font-size: 22px;
+    }
+  }
+  .new_career_p {
+    margin: 0;
+    color: #414042;
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}

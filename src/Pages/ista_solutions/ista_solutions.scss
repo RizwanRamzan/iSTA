@@ -1,0 +1,81 @@
+@import "../../GeneralStyle/variables.scss";
+
+.ista {
+  background-color: $secondaryColor;
+  display: flex;
+  padding: 85px 127px;
+  gap: 5rem;
+  @media screen and (max-width: 968px) {
+    padding: 85px 35px;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 470px) {
+    padding: 85px 10px;
+  }
+  .ista_left {
+    width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+      color: $whiteTextColor;
+      line-height: 65px;
+      margin: 0;
+      @media screen and (max-width: 600px) {
+        font-size: 35px;
+        line-height: 50px;
+      }
+    }
+    p {
+      color: $whiteTextColor;
+    }
+    .ista__buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 3rem;
+      button {
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid $whiteTextColor;
+        background: transparent;
+        color: $whiteTextColor;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 300;
+        width: 100%;
+        transition: 0.5s ease-in-out;
+        &:hover {
+          background-color: $whiteTextColor;
+          color: $secondaryColor;
+        }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+        @media screen and (max-width: 470px) {
+          font-size: 11px;
+        }
+      }
+    }
+    .ista_text {
+      font-size: 14px;
+      font-weight: lighter;
+      margin: 0;
+      text-align: justify;
+      letter-spacing: 1px;
+    }
+  }
+  .ista_right {
+    display: flex;
+    width: 50%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
