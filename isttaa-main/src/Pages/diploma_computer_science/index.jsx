@@ -25,7 +25,7 @@ const Diploma_Computer_Science = () => {
             </div>
             <hr />
             <p>
-              iSTA's Computer Science Diploma Program Focuses On Providing
+            isttaa's Computer Science Diploma Program Focuses On Providing
               Students With A Wide-ranging And Solid Understanding Of The
               Subject. They Offer Courses In Cyber Security, Data Science, And
               More. The Faculty Is Exceptional And Helps Students Comprehend How

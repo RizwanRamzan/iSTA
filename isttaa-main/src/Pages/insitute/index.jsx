@@ -30,12 +30,12 @@ const Insitute = () => {
               <button>Diploma</button>
             </div>
             <p className="insitute_text">
-              "Welcome to iSTA, Pakistan's Premier IT Training Institute!
+              "Welcome to isttaa, Pakistan's Premier IT Training Institute!
               Elevate your skills, soar to new heights in technology, and
               conquer the IT world with our cutting-edge courses. Join our
               dynamic community of learners, guided by expert instructors, and
               embrace a future brimming with endless possibilities. Unleash your
-              potential at iSTA!"
+              potential at isttaa!"
             </p>
           </div>
           <div className="insitute_right">
@@ -43,7 +43,7 @@ const Insitute = () => {
           </div>
         </div>
         <NewCareer />
-        <h1 className="start_learning_with_ista"> Start Learning With iSTA </h1>
+        <h1 className="start_learning_with_ista"> Start Learning With isttaa </h1>
         <Categories />
         <DiplomaCertification />
         <DiscountOffer />

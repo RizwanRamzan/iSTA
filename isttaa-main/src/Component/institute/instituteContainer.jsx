@@ -1,10 +1,8 @@
-import React from 'react'
 import './institute.scss'
-import { Institute } from '../../assets'
 
 const InstituteContainer = ({ item }) => {
     return (
-        <div className={item.name == "iSTA Institute" && 'instituteContainer' || item.name == "iSTA Solutions" && "solutionContainer" || item?.name == "iSTA IT Shop" && "shopContainer"}>
+        <div className={item.name == "isttaa Institute" && 'instituteContainer' || item.name == "isttaa Solutions" && "solutionContainer" || item?.name == "isttaa IT Shop" && "shopContainer"}>
             <div className='instituteHeader'>
                 <div className='instituteSubHeader'>
                     <p className='istaText '>{item?.name}</p>

@@ -2,16 +2,16 @@ import { Institute, Shop, Solution } from "../../assets";
 
 export const WebsiteData = [
     {
-        name: "iSTA Institute",
+        name: "isttaa Institute",
         title: "Pakistan’s No.1 IT Training Institute",
         button1: "Diploma",
         button2: "Courses",
-        des: "Welcome to iSTA, Pakistan's Premier IT Training Institute! Elevate your skills, soar to new heights in technology, and conquer the IT world with our cutting-edge courses. Join our dynamic community of learners, guided by expert instructors, and embrace a future brimming with endless possibilities. Unleash your potential at iSTA!",
+        des: "Welcome to isttaa, Pakistan's Premier IT Training Institute! Elevate your skills, soar to new heights in technology, and conquer the IT world with our cutting-edge courses. Join our dynamic community of learners, guided by expert instructors, and embrace a future brimming with endless possibilities. Unleash your potential at isttaa!",
         image: Institute
     }
     ,
     {
-        name: "iSTA Solutions",
+        name: "isttaa Solutions",
         title: "Unlock the Ideal IT Service, Right Now!",
         button1: "Graphics & Design",
         button2: "Development",
@@ -20,7 +20,7 @@ export const WebsiteData = [
         image: Solution
     }
     , {
-        name: "iSTA IT Shop",
+        name: "isttaa IT Shop",
         title: "Your Source for IT Accessories",
         button1: "Laptop",
         button2: "Computer",

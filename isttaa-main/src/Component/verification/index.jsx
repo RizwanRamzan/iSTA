@@ -7,7 +7,7 @@ const Verification = () => {
       <div className="verification">
         <div className="verification__content">
           <p> Verification </p>
-          <h1> Check The Verification Of Your Certified From iSTA </h1>
+          <h1> Check The Verification Of Your Certified From isttaa </h1>
           <div className="input_group">
             <input type="text" placeholder="Enter Your Certificate ID" />
             <button className="verify"> Verify </button>

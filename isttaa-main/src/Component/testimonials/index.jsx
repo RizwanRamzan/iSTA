@@ -29,11 +29,11 @@ const Testimonials = () => {
             <hr />
             <div className="testimonial_card_bottom">
               <p>
-                "Welcome to iSTA, Pakistan's Premier IT Training Institute!
+                "Welcome to isttaa, Pakistan's Premier IT Training Institute!
                 Elevate your skills, soar to new heights in technology, and
                 conquer the IT world with our cutting-edge courses. Join our
                 dynamic community of learners, guided by expert instructors, and
-                embrace. "Welcome to iSTA, Pakistan's Premier IT Training
+                embrace. "Welcome to isttaa, Pakistan's Premier IT Training
                 Institute! Elevate your skills, soar to new heights in
                 technology, and conquer the IT world with our cutting-edge
                 courses. Join our dynamic community of learners, guided by
@@ -61,11 +61,11 @@ const Testimonials = () => {
             <hr />
             <div className="testimonial_card_bottom">
               <p>
-                "Welcome to iSTA, Pakistan's Premier IT Training Institute!
+                "Welcome to isttaa, Pakistan's Premier IT Training Institute!
                 Elevate your skills, soar to new heights in technology, and
                 conquer the IT world with our cutting-edge courses. Join our
                 dynamic community of learners, guided by expert instructors, and
-                embrace. "Welcome to iSTA, Pakistan's Premier IT Training
+                embrace. "Welcome to isttaa, Pakistan's Premier IT Training
                 Institute! Elevate your skills, soar to new heights in
                 technology, and conquer the IT world with our cutting-edge
                 courses. Join our dynamic community of learners, guided by
@@ -93,11 +93,11 @@ const Testimonials = () => {
             <hr />
             <div className="testimonial_card_bottom">
               <p>
-                "Welcome to iSTA, Pakistan's Premier IT Training Institute!
+                "Welcome to isttaa, Pakistan's Premier IT Training Institute!
                 Elevate your skills, soar to new heights in technology, and
                 conquer the IT world with our cutting-edge courses. Join our
                 dynamic community of learners, guided by expert instructors, and
-                embrace. "Welcome to iSTA, Pakistan's Premier IT Training
+                embrace. "Welcome to isttaa, Pakistan's Premier IT Training
                 Institute! Elevate your skills, soar to new heights in
                 technology, and conquer the IT world with our cutting-edge
                 courses. Join our dynamic community of learners, guided by

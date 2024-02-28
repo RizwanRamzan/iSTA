@@ -20,15 +20,15 @@ const Our__Client = () => {
               </div>
               <div className="text">
                 <p>
-                  "Welcome to iSTA, Pakistan's Premier IT Training Institute!
+                  "Welcome to isttaa, Pakistan's Premier IT Training Institute!
                   Elevate your skills, soar to new heights in technology, and
                   conquer the IT world with our cutting-edge courses. Join our
                   dynamic community of learners, guided by expert instructors,
-                  and embrace. "Welcome to iSTA, Pakistan's Premier IT Training
+                  and embrace. "Welcome to isttaa, Pakistan's Premier IT Training
                   Institute! Elevate your skills, soar to new heights in
                   technology, and conquer the IT world with our cutting-edge
                   courses. Join our dynamic community of learners, guided by
-                  expert instructors, and embrace. "Welcome to iSTA, Pakistan's
+                  expert instructors, and embrace. "Welcome to isttaa, Pakistan's
                   Premier IT Training Institute! Elevate your skills, soar to
                   new heights in technology, and conquer the IT world with our
                   cutting-edge courses. Join our dynamic community of learners,
@@ -55,15 +55,15 @@ const Our__Client = () => {
               </div>
               <div className="text">
                 <p>
-                  "Welcome to iSTA, Pakistan's Premier IT Training Institute!
+                  "Welcome to isttaa, Pakistan's Premier IT Training Institute!
                   Elevate your skills, soar to new heights in technology, and
                   conquer the IT world with our cutting-edge courses. Join our
                   dynamic community of learners, guided by expert instructors,
-                  and embrace. "Welcome to iSTA, Pakistan's Premier IT Training
+                  and embrace. "Welcome to isttaa, Pakistan's Premier IT Training
                   Institute! Elevate your skills, soar to new heights in
                   technology, and conquer the IT world with our cutting-edge
                   courses. Join our dynamic community of learners, guided by
-                  expert instructors, and embrace. "Welcome to iSTA, Pakistan's
+                  expert instructors, and embrace. "Welcome to isttaa, Pakistan's
                   Premier IT Training Institute! Elevate your skills, soar to
                   new heights in technology, and conquer the IT world with our
                   cutting-edge courses. Join our dynamic community of learners,
@@ -90,15 +90,15 @@ const Our__Client = () => {
               </div>
               <div className="text">
                 <p>
-                  "Welcome to iSTA, Pakistan's Premier IT Training Institute!
+                  "Welcome to isttaa, Pakistan's Premier IT Training Institute!
                   Elevate your skills, soar to new heights in technology, and
                   conquer the IT world with our cutting-edge courses. Join our
                   dynamic community of learners, guided by expert instructors,
-                  and embrace. "Welcome to iSTA, Pakistan's Premier IT Training
+                  and embrace. "Welcome to isttaa, Pakistan's Premier IT Training
                   Institute! Elevate your skills, soar to new heights in
                   technology, and conquer the IT world with our cutting-edge
                   courses. Join our dynamic community of learners, guided by
-                  expert instructors, and embrace. "Welcome to iSTA, Pakistan's
+                  expert instructors, and embrace. "Welcome to isttaa, Pakistan's
                   Premier IT Training Institute! Elevate your skills, soar to
                   new heights in technology, and conquer the IT world with our
                   cutting-edge courses. Join our dynamic community of learners,

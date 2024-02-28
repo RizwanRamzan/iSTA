@@ -25,12 +25,12 @@ const Advertising_Designing = () => {
             </div>
             <hr />
             <p>
-              "Immerse yourself in the art of visual persuasion with iSTA
+              "Immerse yourself in the art of visual persuasion with isttaa
               Institute's Advertising Designing Course. From conceptualization
               to execution, learn to craft impactful and compelling
               advertisements that captivate audiences. Elevate your design
               prowess and embark on a dynamic journey into the world of
-              advertising creativity with iSTA Institute."
+              advertising creativity with isttaa Institute."
             </p>
           </div>
 

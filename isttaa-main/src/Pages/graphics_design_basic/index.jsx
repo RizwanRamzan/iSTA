@@ -25,7 +25,7 @@ const Graphics_Designing_Basic = () => {
             </div>
             <hr />
             <p>
-              "At iSTA Institute, our Graphic Designing Course empowers students
+              "At isttaa Institute, our Graphic Designing Course empowers students
               to master design fundamentals, Adobe software, typography, and
               branding techniques. Unlock your creativity and embark on a
               versatile design career journey."

@@ -25,7 +25,7 @@ const Adobe_Photoshop = () => {
             </div>
             <hr />
             <p>
-              "Unlock your creative potential with iSTA Institute's Adobe
+              "Unlock your creative potential with isttaa Institute's Adobe
               Photoshop Course. Learn photo editing, digital artistry, and
               graphic design using the industry-standard software."
             </p>

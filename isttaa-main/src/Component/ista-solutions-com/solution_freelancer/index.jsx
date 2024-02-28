@@ -41,7 +41,7 @@ const Solution_Freelancer = () => {
 
           <div className="secound__two">
             <div className="inputs__group">
-              <label> Why do you want to work at iSTA Solutions? </label>
+              <label> Why do you want to work at isttaa Solutions? </label>
               <input type="text" />
             </div>
             <div className="inputs__group">

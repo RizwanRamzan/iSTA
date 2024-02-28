@@ -25,7 +25,7 @@ const Graphics_designing = () => {
             </div>
             <hr />
             <p>
-              "Discover your design journey at iSTA Institute with our Graphic
+              "Discover your design journey at isttaa Institute with our Graphic
               Designing & UI UX Design Course. Gain skills in visual
               communication, UI/UX principles, and software tools to excel in
               modern design challenges."

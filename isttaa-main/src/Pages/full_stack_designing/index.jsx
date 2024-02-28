@@ -26,7 +26,7 @@ const Full_stack_designing = () => {
             </div>
             <hr />
             <p>
-              "At iSTA Institute, we offer a dynamic Full Stack Graphic
+              "At isttaa Institute, we offer a dynamic Full Stack Graphic
               Designing Course that covers essential design principles,
               industry-standard software proficiency, UI/UX expertise, and
               portfolio development. Our program prepares students for a wide

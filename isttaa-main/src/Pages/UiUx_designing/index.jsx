@@ -25,7 +25,7 @@ const UiUx_designing = () => {
             </div>
             <hr />
             <p>
-              "Embark on a transformative design journey with iSTA Institute's
+              "Embark on a transformative design journey with isttaa Institute's
               UI UX Designing Course. Learn user-centered design principles,
               wireframing, prototyping, and interactive design skills to create
               exceptional digital experiences."

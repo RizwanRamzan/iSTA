@@ -12,7 +12,7 @@ const MyFooter = () => {
           <hr />
           <div className="mid_content">
             <div className="one">
-              <h1> iSTA Institute </h1>
+              <h1> isttaa Institute </h1>
               <ul>
                 <li>Diploma </li>
                 <li>Courses</li>
@@ -21,7 +21,7 @@ const MyFooter = () => {
               </ul>
             </div>
             <div className="two">
-              <h1> iSTA Solutions </h1>
+              <h1> isttaa Solutions </h1>
               <ul>
                 <li>Graphics & Design</li>
                 <li>Development</li>
@@ -30,7 +30,7 @@ const MyFooter = () => {
               </ul>
             </div>
             <div className="three">
-              <h1> iSTA IT Shop </h1>
+              <h1> isttaa IT Shop </h1>
               <ul>
                 <li> Laptop </li>
                 <li> Computer </li>

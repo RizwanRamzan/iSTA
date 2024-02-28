@@ -6,9 +6,9 @@ const IT_Verification = () => {
     <>
       <div className="it__verification">
         <div className="it__verification__content">
-          <h1> "Exclusive Offer For iSTA Students </h1>
+          <h1> "Exclusive Offer For isttaa Students </h1>
           <p>
-            "Are you an iSTA student? Verify now with a code and unlock
+            "Are you an isttaa student? Verify now with a code and unlock
             exclusive discounts.
           </p>
           <div className="it__input_group">

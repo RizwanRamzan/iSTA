@@ -25,9 +25,9 @@ const Digital_Textile_Designing = () => {
             <hr />
             <p>
               "Discover your path to becoming a digital textile design virtuoso
-              through iSTA Institute's specialized course. Uncover the realm of
+              through isttaa Institute's specialized course. Uncover the realm of
               digital tools, techniques, and creative processes, and bring your
-              artistic vision to life on fabric. Elevate your skills with iSTA
+              artistic vision to life on fabric. Elevate your skills with isttaa
               Institute and flourish in the world of textile innovation."
             </p>
           </div>

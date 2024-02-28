@@ -25,7 +25,7 @@ const Adobe_Illustrator = () => {
             </div>
             <hr />
             <p>
-              "Explore the realm of vector graphics with iSTA Institute's Adobe
+              "Explore the realm of vector graphics with isttaa Institute's Adobe
               Illustrator Course. Master the intricacies of creating logos,
               illustrations, and designs with industry-standard vector
               software."
