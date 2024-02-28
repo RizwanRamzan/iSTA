@@ -1,0 +1,102 @@
+@import "../../GeneralStyle/variables.scss";
+
+.categories {
+  background-color: #f5f8fe;
+  padding: 4rem 0rem;
+  h3 {
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+  }
+  h1 {
+    text-align: center;
+    color: $primaryColor;
+    margin: 0;
+    padding-bottom: 1rem;
+    @media screen and (max-width: 650px) {
+      font-size: 26px;
+    }
+  }
+  .categories_cards {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    @media screen and (max-width: 968px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 3rem;
+    }
+    @media screen and (max-width: 768px) {
+      width: 95%;
+    }
+    @media screen and (max-width: 650px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+      max-width: 300px;
+      @media screen and (max-width: 650px) {
+        margin: auto;
+      }
+      .card_content {
+        background-color: $whiteTextColor;
+        padding: 3rem 2rem 2rem 2rem;
+        height: 150px;
+        box-shadow: $shadow;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        // width: 320px;
+        // width: 257px;
+        // width: fit-content;
+        .categories_top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 1rem;
+          width: 100%;
+          .categories_top_left {
+            color: #414042;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 30px;
+            width: 50%;
+          }
+          .categories_top_right {
+            width: 50%;
+            text-align: end;
+            img {
+              width: 70%;
+            }
+          }
+        }
+
+        .categories_bottom {
+          h5 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #414042;
+            margin: 0;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 300;
+            color: #414042;
+            margin: 0;
+          }
+        }
+      }
+      .explore {
+        background-color: $primaryColor;
+        height: 55px;
+        width: 100%;
+        border: none;
+        color: #f5f8fe;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+}

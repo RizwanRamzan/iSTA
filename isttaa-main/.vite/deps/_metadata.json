@@ -1,0 +1,56 @@
+{
+  "hash": "25039c20",
+  "browserHash": "98ebfb84",
+  "optimized": {
+    "antd": {
+      "src": "../../node_modules/antd/es/index.js",
+      "file": "antd.js",
+      "fileHash": "43fe2fe8",
+      "needsInterop": false
+    },
+    "antd/es/typography/Link": {
+      "src": "../../node_modules/antd/es/typography/Link.js",
+      "file": "antd_es_typography_Link.js",
+      "fileHash": "5b7e2642",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "e07f6dfd",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "68e6de4f",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "4137634d",
+      "needsInterop": false
+    },
+    "react-svg": {
+      "src": "../../node_modules/react-svg/dist/react-svg.esm.js",
+      "file": "react-svg.js",
+      "fileHash": "5e1f2b35",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-VYI5ZJHO": {
+      "file": "chunk-VYI5ZJHO.js"
+    },
+    "chunk-MDIHFEFG": {
+      "file": "chunk-MDIHFEFG.js"
+    },
+    "chunk-CU63ZIAF": {
+      "file": "chunk-CU63ZIAF.js"
+    },
+    "chunk-L7APZED3": {
+      "file": "chunk-L7APZED3.js"
+    }
+  }
+}

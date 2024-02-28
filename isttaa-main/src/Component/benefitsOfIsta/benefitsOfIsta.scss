@@ -1,0 +1,48 @@
+@import "../../GeneralStyle/variables.scss";
+
+.benefitsOfIsta {
+  background-color: #f5f8fe;
+  h1 {
+    color: $primaryColor;
+    text-align: center;
+    margin: 0;
+    padding-top: 2rem;
+  }
+  .benefits_content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 3rem 0;
+    gap: 2rem;
+    @media screen and (max-width: 968px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 3rem;
+    }
+    @media screen and (max-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 3rem;
+    }
+    .benefit_card {
+      text-align: center;
+      background-color: white;
+      box-shadow: $shadow;
+      padding: 2.5rem 1rem;
+      border-radius: 10px;
+      width: 19.5%;
+      @media screen and (max-width: 968px) {
+        width: 94%;
+      }
+      h4 {
+        color: $primaryColor;
+        margin-bottom: 0;
+      }
+      p {
+        margin-bottom: 0;
+        font-size: 12px;
+      }
+    }
+  }
+}

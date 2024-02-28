@@ -1,0 +1,124 @@
+@import "../../../GeneralStyle/variables.scss";
+
+.freelancer_head {
+  background-color: $secondaryColor;
+  h1 {
+    text-align: center;
+    color: $whiteTextColor;
+    padding: 2rem 0;
+  }
+}
+
+.solution__freelancer {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  .solution__freelancer__content {
+    background-color: #f4faf6;
+    padding: 2rem 0 4rem 0;
+    h1 {
+      text-align: center;
+      font-size: 18px;
+    }
+    .first__four {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 80%;
+      gap: 2rem;
+      margin: auto;
+      @media screen and (max-width: 968px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .inputs__group {
+        display: flex;
+        flex-direction: column;
+        label {
+          font-weight: 300;
+          color: #414042;
+        }
+        input {
+          border-radius: 5px;
+          padding: 10px;
+          background-color: white !important;
+          border: 1px solid #414042;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+    .inputs__group_single {
+      margin: 1rem 0;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin-top: 2rem !important;
+      margin: auto;
+      label {
+        font-weight: 300;
+        color: #414042;
+      }
+      input {
+        border-radius: 5px;
+        padding: 10px;
+        background-color: white !important;
+        border: 1px solid #414042;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .secound__two {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 80%;
+      margin-top: 2rem !important;
+      margin: auto;
+      gap: 2rem;
+      @media screen and (max-width: 968px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .inputs__group {
+        display: flex;
+        flex-direction: column;
+        label {
+          font-weight: 300;
+          color: #414042;
+        }
+        input {
+          border-radius: 5px;
+          padding: 10px;
+          height: 100px;
+          background-color: white !important;
+          border: 1px solid #414042;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+  .submit {
+    background-color: $secondaryColor;
+    color: $whiteTextColor;
+    display: flex;
+    margin-top: -1rem !important;
+    margin: auto;
+    border: none;
+    padding: 12px 80px;
+    border-radius: 6px;
+    font-weight: 700;
+  }
+}
+
+.text_note {
+  background-color: #f4faf6;
+  color: #414042;
+  font-weight: 300;
+  margin-top: 1rem !important;
+  margin: 80%;
+  margin: auto;
+  padding: 2px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+}

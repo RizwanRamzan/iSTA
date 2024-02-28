@@ -1,0 +1,64 @@
+@import "../../../GeneralStyle/variables.scss";
+
+.popular_demand_services {
+  background-color: #fef4f5;
+  padding: 3rem 0;
+  .popular_demand_services_content {
+    width: 80%;
+    margin: auto;
+    h1 {
+      text-align: center;
+      color: $thirdColor;
+      font-weight: 700;
+      padding-bottom: 1rem;
+    }
+    .popular_demand_services_content_cards {
+      display: flex;
+      gap: 3rem;
+      @media screen and (max-width: 968px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        // gap: 2rem;
+      }
+      @media screen and (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        // gap: 2rem;
+      }
+      .popular_demand_services_content_card {
+        .top {
+          text-align: center;
+          background-color: white;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          padding: 0 15px;
+        }
+        p {
+          margin: 0;
+          font-size: 13px;
+          font-weight: 500;
+          padding-bottom: 0.5rem;
+          text-align: left;
+        }
+        img {
+          width: 100%;
+          margin-right: 10px;
+          padding-bottom: 5px;
+          padding-top: 20px;
+        }
+        .popular_demand_btn {
+          width: 100%;
+          padding: 15px 0;
+          background-color: $thirdColor;
+          border: none;
+          color: white;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+          cursor: pointer;
+          font-weight: 700;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

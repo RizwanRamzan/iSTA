@@ -1,0 +1,100 @@
+@import "../../GeneralStyle/variables.scss";
+
+.discount {
+  margin-bottom: 3rem;
+  .discount_content {
+    width: 80%;
+    margin: auto;
+    p {
+      text-align: center;
+      color: #414042;
+      font-weight: 300;
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+      color: $primaryColor;
+      margin: 0;
+      padding-bottom: 2rem;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    .discount_offer__content_cards {
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: 1100px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+      @media screen and (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        // gap: 1rem;
+      }
+      .discount_offer__content_card {
+        box-shadow: $shadow;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        // width: 200px;
+        .discount__content_card_top {
+          padding: 0 2rem;
+          h2 {
+            font-size: 20px;
+            color: #414042;
+          }
+        }
+        hr {
+          width: 80%;
+        }
+        .discount__content_card_bottom {
+          padding: 0 2rem;
+          margin-bottom: 1rem;
+          h4 {
+            margin-bottom: 0;
+            color: #646464;
+          }
+          .count_down {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            .time {
+              text-align: center;
+              border-left: 1px solid #646464;
+              padding-left: 5px;
+              &:nth-last-child(1) {
+                border-left: none;
+              }
+              &:nth-child(1) {
+                border-left: none;
+              }
+              h6 {
+                margin: 0;
+              }
+              p {
+                margin: 0;
+                font-size: 8px;
+              }
+              img {
+                width: 70px;
+                // padding-left: 80px;
+              }
+            }
+          }
+        }
+        .view_course {
+          padding: 14px 10px;
+          background-color: $primaryColor;
+          color: $whiteTextColor;
+          border: none;
+          width: 100%;
+          font-size: 18px;
+          font-weight: 700;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

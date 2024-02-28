@@ -1,0 +1,125 @@
+@import "../../../GeneralStyle/variables.scss";
+
+.ista__packages_head {
+  background-color: $secondaryColor;
+  h1 {
+    color: $whiteTextColor;
+    text-align: center;
+    padding: 2.5rem 0;
+  }
+}
+
+.ista__packages {
+  background-color: #f4faf6;
+  margin: 3rem 0 0 0;
+  .ista__packages_cards {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 4rem 0;
+    gap: 3rem;
+    @media screen and (max-width: 968px) {
+      width: 95%;
+      margin: auto;
+    }
+    @media screen and (max-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 540px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ista__packages_card {
+      display: flex;
+      flex-direction: column;
+      box-shadow: $shadow;
+      background-color: white;
+      justify-content: space-between;
+      border-radius: 10px;
+      width: 30%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      .ista__packages_card_content {
+        padding: 30px 2rem 0 2rem;
+        @media screen and (max-width: 968px) {
+          padding: 30px 1rem 0 1rem;
+        }
+        .ista__packages_top {
+          h1 {
+            font-size: 20px;
+            margin: 0;
+            color: #414042;
+            font-weight: 400;
+          }
+          p {
+            font-size: 13px;
+            margin: 0;
+            font-weight: 300;
+            color: #414042;
+          }
+        }
+        .line {
+          width: 100%;
+          margin-top: 23px;
+        }
+        .ista__packages_bottom {
+          h1 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #414042;
+          }
+          .delivery {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            @media screen and (max-width: 968px) {
+              gap: 0.5rem;
+            }
+            .delivery_left {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              img {
+                width: 15px;
+              }
+              p {
+                font-size: 12px;
+                font-weight: 700;
+                color: #414042;
+                padding-top: 3px;
+              }
+            }
+            .delivery_right {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              img {
+                width: 15px;
+              }
+              p {
+                font-size: 12px;
+                font-weight: 700;
+                color: #414042;
+                padding-top: 3px;
+              }
+            }
+          }
+        }
+      }
+      .pay__now {
+        padding: 10px 0;
+        background-color: $secondaryColor;
+        color: $whiteTextColor;
+        border: none;
+        margin-top: 1.5rem;
+        font-size: 16px;
+        cursor: pointer;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+}

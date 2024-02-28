@@ -1,0 +1,114 @@
+@import "../../GeneralStyle/variables.scss";
+
+.testimonials {
+  margin-top: 3rem !important;
+  width: 80%;
+  margin: auto;
+  p {
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 0;
+    color: $primaryColor;
+    font-weight: 700;
+    @media screen and (max-width: 540px) {
+      font-size: 22px;
+    }
+  }
+  .testimonials__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    @media screen and (max-width: 968px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .testimonial_card {
+      background-color: $whiteTextColor;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: $shadow;
+      width: 25.2%;
+      @media screen and (max-width: 968px) {
+        width: 78%;
+      }
+      .testimonial_card_top {
+        display: flex;
+        align-items: center;
+        h2 {
+          margin: 0;
+          font-size: 16px;
+        }
+        p {
+          margin: 0;
+          font-size: 13px;
+        }
+        .testimonial_card_top_left {
+          img {
+            border-radius: 50%;
+            width: 75%;
+          }
+        }
+      }
+      .stars {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+        .stars_left {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          span {
+            font-size: 14px;
+            font-weight: 700;
+            color: #414042;
+          }
+          img {
+            width: 65%;
+          }
+        }
+        .stars_right {
+          font-size: 12px;
+          font-weight: 300;
+          color: #414042;
+        }
+      }
+      .testimonial_card_bottom {
+        height: 160px;
+        overflow: auto;
+        p {
+          font-size: 13px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+/* Target the scrollbar */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+/* Track - the area the scrollbar moves in */
+::-webkit-scrollbar-track {
+  background-color: #d9d9d9; /* Color of the track */
+}
+
+/* Handle - the draggable scrolling element */
+::-webkit-scrollbar-thumb {
+  background-color: #414042; /* Color of the scrollbar handle */
+  border-radius: 6px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: blue; /* Color of the handle when hovered */
+}

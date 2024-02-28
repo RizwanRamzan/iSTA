@@ -1,0 +1,56 @@
+@import "../../GeneralStyle/variables.scss";
+
+.my_Footer {
+  background-color: $primaryColor;
+  .footer__content {
+    width: 80%;
+    margin: auto;
+    img {
+      display: flex;
+      margin: auto;
+      padding: 3rem 0;
+    }
+    .mid_content {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem 0;
+      h1 {
+        color: $whiteTextColor;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        color: $whiteTextColor;
+        font-weight: 300;
+        li {
+          cursor: pointer;
+        }
+      }
+    }
+    .bottom_content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h1 {
+        color: $whiteTextColor;
+        font-size: 24px;
+      }
+      .social_icons {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        .social_icon {
+          width: 50px;
+          border: 1px solid $whiteTextColor;
+          border-radius: 50%;
+          position: relative;
+          height: 50px;
+          img {
+            position: absolute;
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+}

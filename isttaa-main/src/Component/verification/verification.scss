@@ -1,0 +1,64 @@
+@import "../../GeneralStyle/variables.scss";
+
+.verification {
+  background-color: #f5f8fe;
+  text-align: center;
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+  .verification__content {
+    p {
+      margin: 0;
+      font-weight: 400;
+      color: #414042;
+    }
+    h1 {
+      margin: 0;
+      color: $primaryColor;
+      padding-bottom: 23px;
+      font-size: 25px;
+      @media screen and (max-width: 600px) {
+        font-size: 18px;
+      }
+    }
+    .input_group {
+      input {
+        box-shadow: $shadow;
+        padding: 20px 35px;
+        width: 30%;
+        border: none;
+        background-color: $whiteTextColor !important;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        @media screen and (max-width: 768px) {
+          width: 60%;
+        }
+        @media screen and (max-width: 600px) {
+          width: 40%;
+        }
+        @media screen and (max-width: 490px) {
+          width: 50%;
+        }
+        cursor: pointer;
+        &::placeholder {
+          font-size: 20px;
+          color: rgba(0, 0, 0, 0.2);
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+      .verify {
+        padding: 20px 60px;
+        background-color: $primaryColor;
+        color: $whiteTextColor;
+        border: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        cursor: pointer;
+        @media screen and (max-width: 600px) {
+          padding: 20px 20px;
+        }
+      }
+    }
+  }
+}

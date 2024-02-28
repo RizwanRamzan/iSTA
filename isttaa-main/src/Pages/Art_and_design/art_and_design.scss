@@ -1,0 +1,192 @@
+@import "../../GeneralStyle/variables.scss";
+
+.art_and_design {
+  background-color: #f5f8fe;
+  margin-top: 3rem;
+
+  .art_and_design_content {
+    width: 80%;
+    margin: auto;
+    @media screen and (max-width: 540px) {
+      width: 95%;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 3rem;
+      gap: 1rem;
+      @media screen and (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .art_btn {
+        padding: 12px 0px;
+        font-size: 14px;
+        font-weight: 700;
+        background-color: $primaryColor;
+        border: none;
+        color: $whiteTextColor;
+        border-radius: 5px;
+        position: relative;
+        cursor: pointer;
+        width: 260px;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+        // &::after {
+        //   content: "";
+        //   width: 48%;
+        //   height: 2px;
+        //   background-color: $primaryColor;
+        //   position: absolute;
+        //   bottom: -10px;
+        //   left: 60px;
+        // }
+      }
+    }
+    .art_and_design_single_cards {
+      .art_and_design_single_card {
+        background-color: $whiteTextColor;
+        box-shadow: $shadow;
+        margin-top: 3rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        .title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1.5rem 2rem;
+          @media screen and (max-width: 450px) {
+            padding: 1.5rem 0.5rem;
+          }
+          h2 {
+            margin: 0;
+            color: $primaryColor;
+            @media screen and (max-width: 768px) {
+              font-size: 18px;
+            }
+            @media screen and (max-width: 490px) {
+              font-size: 16px;
+            }
+          }
+          p {
+            margin: 0;
+            font-size: 12px;
+            font-weight: 700;
+          }
+        }
+        .img {
+          width: 95%;
+          margin: auto;
+          img {
+            width: 100%;
+          }
+        }
+        .card_btns {
+          display: flex;
+          margin-top: 1rem;
+          .left_btn {
+            width: 50%;
+            padding: 12px 50px;
+            font-size: 14px;
+            font-weight: 700;
+            background-color: #414042;
+            border: none;
+            color: $whiteTextColor;
+            border-bottom-left-radius: 10px;
+            cursor: pointer;
+            @media screen and (max-width: 768px) {
+              padding: 12px 0;
+            }
+          }
+          .right_btn {
+            width: 50%;
+            padding: 15px 50px;
+            font-size: 14px;
+            font-weight: 700;
+            background-color: $primaryColor;
+            border: none;
+            color: $whiteTextColor;
+            border-bottom-right-radius: 10px;
+            cursor: pointer;
+            @media screen and (max-width: 768px) {
+              padding: 12px 0;
+            }
+          }
+        }
+      }
+    }
+
+    ////double cards
+
+    .art_and_design_double_cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .art_and_design_single_card {
+        background-color: $whiteTextColor;
+        box-shadow: $shadow;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        .title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1.5rem 2rem;
+          h2 {
+            margin: 0;
+            color: $primaryColor;
+          }
+          p {
+            margin: 0;
+            font-size: 12px;
+            font-weight: 700;
+          }
+        }
+        .img {
+          width: 95%;
+          margin: auto;
+          img {
+            width: 100%;
+          }
+        }
+        .card_btns {
+          display: flex;
+          margin-top: 1rem;
+          .left_btn {
+            width: 50%;
+            padding: 12px 50px;
+            font-size: 14px;
+            font-weight: 700;
+            background-color: #414042;
+            border: none;
+            color: $whiteTextColor;
+            border-bottom-left-radius: 10px;
+            cursor: pointer;
+            @media screen and (max-width: 768px) {
+              padding: 12px 0;
+            }
+          }
+          .right_btn {
+            width: 50%;
+            padding: 15px 50px;
+            font-size: 14px;
+            font-weight: 700;
+            background-color: $primaryColor;
+            border: none;
+            color: $whiteTextColor;
+            border-bottom-right-radius: 10px;
+            cursor: pointer;
+            @media screen and (max-width: 768px) {
+              padding: 12px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
