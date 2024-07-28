@@ -19,36 +19,42 @@ const Home = () => {
   const [state, handleSubmit] = useForm("mrgvebpz");
 
   if (state.succeeded) {
-    form.resetFields()
-
+    form.resetFields();
   }
 
   useEffect(() => {
     if (state.succeeded) {
-      console.log(state, "state")
-      message.success("Thank you for joinig !")
+      console.log(state, "state");
+      message.success("Thank you for joinig !");
     }
-  }, [state])
+  }, [state]);
 
   return (
     <div className="main">
       <TopBar activeClass="activehome" button="Join" />
       <div className="home">
-        <Carousel style={{ height: "100%", width: "100%" }} slidesToShow={1} dotPosition="top" dots={true} autoplay>
+        <Carousel
+          style={{ height: "100%", width: "100%" }}
+          slidesToShow={1}
+          dotPosition="top"
+          dots={true}
+          autoplay
+        >
           <div className="welcomeIsta">
             <div className="welcome">
               <div className="welcome-left">
                 <p className="welcome-text">Welcome To</p>
                 <img src={NewLogo} />
                 <p className="description">
-                  isttaa is a global company that offers a wide range of services
-                  across various industries. From technology solutions to
-                  consulting, finance, marketing, and logistics, isttaa aims to
-                  simplify complex challenges and deliver reliable, tailored
+                  isttaa is a global company that offers a wide range of
+                  services across various industries. From technology solutions
+                  to consulting, finance, marketing, and logistics, isttaa aims
+                  to simplify complex challenges and deliver reliable, tailored
                   services to clients worldwide. With expertise in cutting-edge
-                  technologies, strategic consulting, financial planning, marketing,
-                  and logistics management, isttaa strives to be a trusted partner in
-                  driving growth and success for businesses of all sizes.
+                  technologies, strategic consulting, financial planning,
+                  marketing, and logistics management, isttaa strives to be a
+                  trusted partner in driving growth and success for businesses
+                  of all sizes.
                 </p>
               </div>
               <div className="welcome-right">
@@ -62,8 +68,6 @@ const Home = () => {
           <SolutionsBanner />
 
           <Store />
-
-
         </Carousel>
         {/* <div className="tabs">
           <button
@@ -88,18 +92,33 @@ const Home = () => {
         <InstituteContainer item={item} />
       ))}
 
-      {/* Start Buisness With isttaa */}
-
-      <div className="start-buisness">
-        <div className="start">
-          <img width="100%" src={StartBu} />
-          <h2>Start Business With isttaa</h2>
-          <p>Build Your Dreams With isttaa</p>
-          <button onClick={() => navigate("/start-business")}>
-            Start Business
-          </button>
+      {/* Daily updates  */}
+      {/* <div className="daily-updates">
+        <h2> Daily Update's </h2>
+        <div className="main-content">
+          <div className="content">
+            <h2>Features of Our Training</h2>
+            <h2>
+              Get Addmission <br />
+              Get Success
+            </h2>
+          </div>
+          <div className="content">
+            <h2>Features of Our Training</h2>
+            <h2>
+              Get Addmission <br />
+              Get Success
+            </h2>
+          </div>
+          <div className="content">
+            <h2>Features of Our Training</h2>
+            <h2>
+              Get Addmission <br />
+              Get Success
+            </h2>
+          </div>
         </div>
-      </div>
+      </div> */}
 
       {/* founder */}
       <div className="CEo">
@@ -111,8 +130,8 @@ const Home = () => {
             <p className="welcome-text">Founder & CEO</p>
             <h2>Tayyab Imtiaz</h2>
             <p className="welcome-des">
-              As the Founder & CEO of isttaa, I am thrilled to lead a company that
-              offers comprehensive IT Training, cutting-edge Software House
+              As the Founder & CEO of isttaa, I am thrilled to lead a company
+              that offers comprehensive IT Training, cutting-edge Software House
               solutions, and an IT Shop, catering to all your technology needs.
               Our commitment to excellence drives us to stay ahead in the
               ever-evolving tech world, delivering personalized services to
@@ -122,14 +141,14 @@ const Home = () => {
               shaping a brighter future together. Thank be a part of our
               journey.
             </p>
+            <button> CONNECT </button>
           </div>
         </div>
       </div>
 
-
       {/* Email Updates */}
 
-      <div className="Email">
+      {/* <div className="Email">
         <div className="email-box">
           <div className="email-text">
             <p>
@@ -149,6 +168,19 @@ const Home = () => {
             <button type='submit'>Subscribe</button>
           </Form>
           <div></div>
+        </div>
+      </div> */}
+
+      {/* Start Buisness With isttaa */}
+
+      <div className="start-buisness">
+        <div className="start">
+          <img width="100%" src={StartBu} />
+          <h2>Start Business With isttaa</h2>
+          <p>Build Your Dreams With isttaa</p>
+          <button onClick={() => navigate("/start-business")}>
+            Start Business
+          </button>
         </div>
       </div>
 

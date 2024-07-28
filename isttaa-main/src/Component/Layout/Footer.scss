@@ -1,122 +1,125 @@
-@import '../../GeneralStyle/variables.scss';
-@import '../../GeneralStyle/mixins.scss';
-
+@import "../../GeneralStyle/variables.scss";
+@import "../../GeneralStyle/mixins.scss";
 
 .footer {
+  @include flexCenter;
+  width: 100%;
+  background-color: #414042;
+  margin-top: 50px;
+
+  .footer-box {
+    width: 90%;
     @include flexCenter;
-    width: 100%;
-    background-color: #414042;
-    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
 
+    .footer-img {
+      padding: 30px 0px;
 
-    .footer-box {
-        width: 90%;
-        @include flexCenter;
-        flex-direction: column;
-        align-items: center;
-
-        .footer-img {
-            padding: 30px 0px;
-
-            img {
-                width: 250px;
-            }
-        }
-
-        .footer-row {
-            width: 100%;
-            border-top: 1px solid rgba(255, 255, 255, 0.40);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.40);
-            padding: 20px 0px;
-            
-
-            .footer-title {
-                color: #FFF;
-                font-family: $fontFamily;
-                font-size: 26px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-            }
-
-            .footer-sub-title {
-                color: #FFF;
-                font-family: $fontFamily;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: 130%;
-                /* 32.5px */
-            }
-        }
-
-        .social-box {
-            width: 100%;
-            padding: 30px 0px;
-            display: flex;
-            align-items: center;
-
-            p {
-                color: #FFF;
-                font-family: $fontFamily;
-                font-size: 26px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                margin: 0px;
-            }
-
-            .social-icons-list {
-
-                display: flex;
-                gap: 10px;
-                justify-content: end;
-                flex-wrap: wrap;
-
-                
-                @media screen and (max-width: 968px) {
-                    justify-content: start;
-
-                }
-
-
-                .socila-icon {
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50%;
-                    border: 1px solid $light;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    img {
-                        width: 20px;
-                        height: 20px;
-                    }
-                }
-            }
-
-        }
-
-        .footer-end {
-            width: 100%;
-            padding: 20px 0px;
-            border-top: 1px solid rgba(255, 255, 255, 0.40);
-
-            p {
-                color: #FFF;
-                text-align: center;
-                font-family: $fontFamily;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: 130%;
-                /* 26px */
-            }
-        }
-
-
+      img {
+        width: 250px;
+      }
     }
 
+    .footer-row {
+      width: 100%;
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 20px 0px;
 
+      .footer-title {
+        color: #fff;
+        font-family: $fontFamily;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      .footer-sub-title {
+        color: #fff;
+        font-family: $fontFamily;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 130%;
+        /* 32.5px */
+      }
+    }
+
+    .footer-dream-box {
+      background-color: #f1f2f2;
+      width: 70%;
+      text-align: center;
+      margin-top: -30px;
+      border-radius: 10px;
+      p {
+        color: #414042;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 700;
+      }
+    }
+
+    .social-box {
+      width: 100%;
+      padding: 20px 0px;
+      display: flex;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+      margin-top: 30px;
+
+      p {
+        color: #fff;
+        font-family: $fontFamily;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0px;
+      }
+
+      .social-icons-list {
+        display: flex;
+        gap: 10px;
+        justify-content: end;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 968px) {
+          justify-content: start;
+        }
+
+        .socila-icon {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 1px solid $light;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+
+    .footer-end {
+      width: 100%;
+      padding: 20px 0px;
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+
+      p {
+        color: #fff;
+        text-align: center;
+        font-family: $fontFamily;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 130%;
+        /* 26px */
+      }
+    }
+  }
 }
