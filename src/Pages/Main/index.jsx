@@ -2,11 +2,13 @@ import React from "react";
 import "./home.scss";
 import TopBar from "../../Component/Layout/TopBar";
 import { CEo, ISTA, SubHero, Welcome } from "../../assets";
+import WelcomeHero from "../../assets/svg/Welcome.png";
 import { ReactSVG } from "react-svg";
 import InstituteContainer from "../../Component/institute/instituteContainer";
 import { WebsiteData } from "./constant";
 import { Input, Row } from "antd";
 import Footer from "../../Component/Layout/Footer";
+import heroIsttaa from "../../assets/svg/heroIsttaa.png";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -15,7 +17,7 @@ const Home = () => {
   return (
     <div className="main">
       <TopBar activeClass="activehome" button="Join" />
-      <div className="home">
+      {/* <div className="home">
         <div className="sub-home">
           <img src={SubHero} />
           <div className="titles">
@@ -43,7 +45,40 @@ const Home = () => {
             iSTA IT Shop
           </button>
         </div>
+      </div> */}
+      <div className="banner">
+        <p>
+          ISTTAA Is A Company Focused On Launching And Managing A Variety Of
+          Businesses. ISTTAA is like a whole world on its own. Step into the
+          world of ISTTAA.
+        </p>
       </div>
+      <div className="hero-section">
+        <div className="content">
+          <div className="left-content">
+            <div className="main-content">
+              <h1>
+                <img src={heroIsttaa} alt="" /> Education
+              </h1>
+              <p>
+                ISTTAA Is A Company Focused On Launching And Managing A Variety
+                Of Businesses. ISTTAA is like a whole world on its own. Step
+                into the world of ISTTAA.
+              </p>
+              <div className="buttons">
+                <button>Visit Website</button>
+                <button>Learn To Earn With Us!</button>
+              </div>
+            </div>
+          </div>
+          <div className="right-content">
+            <div className="img">
+              <img src={WelcomeHero} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="welcomeIsta">
         <div className="welcome">
           <div className="welcome-left">

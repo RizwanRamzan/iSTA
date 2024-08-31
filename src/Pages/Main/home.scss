@@ -10,126 +10,201 @@
   position: sticky;
   top: 0px;
 
-  .home {
-    background-image: url(../../assets/svg/hearo-img.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 83vh;
+  // .home {
+  //   background-image: url(../../assets/svg/hearo-img.svg);
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   height: 83vh;
+  //   width: 100%;
+  //   display: flex;
+  //   justify-content: center;
+  //   position: relative;
+
+  //   .sub-home {
+  //     @include flexHorizontal;
+  //     justify-content: center;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     height: 100%;
+  //     gap: 50px;
+  //     width: 100%;
+  //     img {
+  //       @media screen and (max-width: 992px) {
+  //         width: 25%;
+  //       }
+  //     }
+
+  //     .titles {
+  //       @include flexHorizontal;
+  //       gap: 30px;
+  //       @media screen and (max-width: 576px) {
+  //         gap: 15px;
+  //       }
+
+  //       p {
+  //         color: #fff;
+  //         text-align: center;
+  //         font-family: $fontFamily;
+  //         font-size: 50px;
+  //         font-style: normal;
+  //         font-weight: 700;
+  //         line-height: normal;
+  //         margin: 0px;
+  //         @media screen and (max-width: 992px) {
+  //           font-size: 24px;
+  //         }
+  //         @media screen and (max-width: 576px) {
+  //           font-size: 18px;
+  //         }
+  //       }
+  //     }
+  //   }
+
+  //   .tabs {
+  //     width: 90%;
+  //     border-radius: 100px;
+  //     position: absolute;
+  //     bottom: -35px;
+  //     padding: 20px 0px;
+  //     background-color: #fff;
+  //     display: flex;
+  //     justify-content: space-between;
+
+  //     .instituteButton {
+  //       width: 100%;
+  //       background-color: transparent;
+  //       border: none;
+  //       font-family: $fontFamily;
+  //       font-size: 26px;
+  //       font-style: normal;
+  //       font-weight: 700;
+  //       line-height: normal;
+  //       color: $primaryColor;
+  //       cursor: pointer;
+  //       @media screen and (max-width: 768px) {
+  //         font-size: 18px;
+  //       }
+  //       @media screen and (max-width: 470px) {
+  //         font-size: 15px;
+  //       }
+  //     }
+
+  //     .solutionButton {
+  //       width: 100%;
+  //       background-color: transparent;
+  //       border: none;
+  //       font-family: $fontFamily;
+  //       font-size: 26px;
+  //       font-style: normal;
+  //       font-weight: 700;
+  //       line-height: normal;
+  //       color: $secondaryColor;
+  //       border-left: 1px solid #414042;
+  //       border-right: 1px solid #414042;
+  //       cursor: pointer;
+  //       @media screen and (max-width: 768px) {
+  //         font-size: 18px;
+  //       }
+  //       @media screen and (max-width: 470px) {
+  //         font-size: 15px;
+  //       }
+  //     }
+
+  //     .shopButton {
+  //       width: 100%;
+  //       background-color: transparent;
+  //       border: none;
+  //       font-family: $fontFamily;
+  //       font-size: 26px;
+  //       font-style: normal;
+  //       font-weight: 700;
+  //       line-height: normal;
+  //       color: $thirdColor;
+  //       cursor: pointer;
+  //       @media screen and (max-width: 768px) {
+  //         font-size: 18px;
+  //       }
+  //       @media screen and (max-width: 470px) {
+  //         font-size: 15px;
+  //       }
+  //     }
+  //   }
+  // }
+
+  .banner {
+    background-color: #2a2a2b;
+    color: #fff;
     width: 100%;
+    p {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  .hero-section {
+    background-color: #414042;
+    width: 100%;
+    height: 500px;
     display: flex;
-    justify-content: center;
-    position: relative;
-
-    .sub-home {
-      @include flexHorizontal;
+    .content {
+      display: flex;
       justify-content: center;
-      flex-direction: column;
       align-items: center;
-      height: 100%;
-      gap: 50px;
       width: 100%;
-      img {
-        @media screen and (max-width: 992px) {
-          width: 25%;
+    }
+    .left-content {
+      width: 60%;
+      background-color: red;
+      .main-content {
+        background-color: #e7f0ff;
+        width: 100%;
+        padding: 20px 30px;
+        overflow: hidden;
+        h1 {
+          margin: 0;
         }
-      }
-
-      .titles {
-        @include flexHorizontal;
-        gap: 30px;
-        @media screen and (max-width: 576px) {
-          gap: 15px;
-        }
-
         p {
-          color: #fff;
-          text-align: center;
-          font-family: $fontFamily;
-          font-size: 50px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          margin: 0px;
-          @media screen and (max-width: 992px) {
-            font-size: 24px;
+          width: 70%;
+        }
+        .buttons {
+          display: flex;
+          gap: 10px;
+          button {
+            background-color: #3b7ded;
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            border: none;
           }
-          @media screen and (max-width: 576px) {
-            font-size: 18px;
+          :nth-child(2) {
+            background-color: #fff;
+            color: #414042;
           }
         }
       }
     }
-
-    .tabs {
-      width: 90%;
-      border-radius: 100px;
-      position: absolute;
-      bottom: -35px;
-      padding: 20px 0px;
-      background-color: #fff;
-      display: flex;
-      justify-content: space-between;
-
-      .instituteButton {
-        width: 100%;
-        background-color: transparent;
-        border: none;
-        font-family: $fontFamily;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        color: $primaryColor;
-        cursor: pointer;
-        @media screen and (max-width: 768px) {
-          font-size: 18px;
-        }
-        @media screen and (max-width: 470px) {
-          font-size: 15px;
-        }
-      }
-
-      .solutionButton {
-        width: 100%;
-        background-color: transparent;
-        border: none;
-        font-family: $fontFamily;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        color: $secondaryColor;
-        border-left: 1px solid #414042;
-        border-right: 1px solid #414042;
-        cursor: pointer;
-        @media screen and (max-width: 768px) {
-          font-size: 18px;
-        }
-        @media screen and (max-width: 470px) {
-          font-size: 15px;
-        }
-      }
-
-      .shopButton {
-        width: 100%;
-        background-color: transparent;
-        border: none;
-        font-family: $fontFamily;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        color: $thirdColor;
-        cursor: pointer;
-        @media screen and (max-width: 768px) {
-          font-size: 18px;
-        }
-        @media screen and (max-width: 470px) {
-          font-size: 15px;
+    .right-content {
+      width: fit-content;
+      border-radius: 50%;
+      padding: 40px;
+      background-color: #505050;
+      .img {
+        background-color: #fff;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        display: flex;
+        padding: 20px;
+        position: relative;
+        img {
+          width: 100%;
         }
       }
     }
   }
+
+  // ----------------------
 
   .welcomeIsta {
     background-color: rgba(0, 0, 0, 0.04);
