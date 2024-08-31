@@ -92,3 +92,14 @@ export { default as Mobile } from "./svg/mobile.svg";
 export { default as Comma_Red } from "./svg/comma_red.svg";
 export { default as Clock } from "./svg/clock.svg";
 export { default as Share } from "./svg/share.svg";
+
+
+
+export { default as IsttaaIcon } from "./isttaa.svg";
+export { default as EduIcon } from "./edu.svg";
+export { default as SolutionIcon } from "./solution.svg";
+export { default as StroeIcon } from "./store.svg";
+
+
+
+

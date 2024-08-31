@@ -4,7 +4,6 @@
 .main {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   width: 100%;
   position: sticky;
@@ -19,89 +18,23 @@
     @media screen and (max-width: 968px) {
       height: fit-content;
     }
+  }
 
-    // position: relative !important;
+  .PurposeMission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
-    // .sub-home {
-    //     @include flexHorizontal;
-    //     justify-content: center;
-    //     flex-direction: column;
-    //     align-items: center;
-    //     height: 100%;
-    //     gap: 50px;
-    //     width: 100%;
+    .box {
+      width: 90%;
 
-    //     .titles {
-    //         @include flexHorizontal;
-    //         gap: 30px;
-
-    //         p {
-    //             color: #FFF;
-    //             text-align: center;
-    //             font-family: $fontFamily;
-    //             font-size: 50px;
-    //             font-style: normal;
-    //             font-weight: 700;
-    //             line-height: normal;
-    //             margin: 0px;
-    //         }
-    //     }
-    // }
-
-    // .tabs {
-    //     width: 90%;
-    //     border-radius: 100px;
-    //     position: absolute;
-    //     bottom: 20px;
-    //     padding: 20px 0px;
-    //     background-color: #fff;
-    //     display: flex;
-    //     z-index: 1;
-    //     justify-content: space-between;
-
-    //     .instituteButton {
-    //         width: 100%;
-    //         background-color: transparent;
-    //         border: none;
-    //         font-family: $fontFamily;
-    //         font-size: 26px;
-    //         font-style: normal;
-    //         font-weight: 700;
-    //         line-height: normal;
-    //         color: $primaryColor;
-    //         cursor: pointer;
-    //     }
-
-    //     .solutionButton {
-    //         width: 100%;
-    //         background-color: transparent;
-    //         border: none;
-    //         font-family: $fontFamily;
-    //         font-size: 26px;
-    //         font-style: normal;
-    //         font-weight: 700;
-    //         line-height: normal;
-    //         color: $secondaryColor;
-    //         border-left: 1px solid #414042;
-    //         border-right: 1px solid #414042;
-    //         cursor: pointer;
-
-    //     }
-
-    //     .shopButton {
-    //         width: 100%;
-    //         background-color: transparent;
-    //         border: none;
-    //         font-family: $fontFamily;
-    //         font-size: 26px;
-    //         font-style: normal;
-    //         font-weight: 700;
-    //         line-height: normal;
-    //         color: $thirdColor;
-    //         cursor: pointer;
-
-    //     }
-    // }
+      h2 {
+        font-weight: 700;
+        color: #424143;
+        margin: 0px;
+      }
+    }
   }
 
   .welcomeIsta {

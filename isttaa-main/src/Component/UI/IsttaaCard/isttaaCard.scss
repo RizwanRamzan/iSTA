@@ -1,0 +1,30 @@
+.isttaaCard {
+  padding: 24px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    display: flex;
+    align-items: center;
+
+    .solutions {
+      svg path {
+        fill: #2da14b;
+      }
+    }
+
+    .store {
+      svg path {
+        fill: #ff9900;
+      }
+    }
+
+    p {
+      font-size: 10px;
+      color: #424143;
+      margin: 0px;
+      font-weight: 400;
+    }
+  }
+}

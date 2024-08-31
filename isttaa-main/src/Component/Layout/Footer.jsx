@@ -15,23 +15,6 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-box">
-        {/* <Row>
-                    <Col className='footer-img' span={24}>
-                        <img src={SubHero} />
-                    </Col>
-                </Row>
-                <Row className='footer-row'>
-                    {FooterTabs.map((item, index) =>
-                        <Col key={index} span={mobileResponsive ? 12 : 6}>
-                            <div>
-                                <p className='footer-title'>{item?.title}</p>
-                                {item?.sub_title?.map((sub_items, index) =>
-                                    <p className='footer-sub-title' key={index}>{sub_items?.name}</p>
-                                )}
-                            </div>
-                        </Col>
-                    )}
-                </Row> */}
         <div className="footer-dream-box">
           <p>Step into the World of iSTTAA & Build your Dreams With Us!</p>
         </div>

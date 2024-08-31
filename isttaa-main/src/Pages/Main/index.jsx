@@ -2,15 +2,16 @@ import React, { useEffect, useState } from "react";
 import "./home.scss";
 import TopBar from "../../Component/Layout/TopBar";
 import { CEo, NewLogo, StartBu, Welcome } from "../../assets";
-import InstituteContainer from "../../Component/institute/instituteContainer";
-import { WebsiteData } from "./constant";
-import { Carousel, Form, Input, Row, message } from "antd";
+import { Button, Carousel, Form, Input, Row, message } from "antd";
 import Footer from "../../Component/Layout/Footer";
 import { useNavigate } from "react-router-dom";
 import InstituteBanner from "../../Component/Banners/institute";
 import SolutionsBanner from "../../Component/Banners/solutions";
 import Store from "../../Component/Banners/store";
 import { useForm } from "@formspree/react";
+import DailyUpdate from "./dailyUpdate";
+import { WebsiteData } from "./constant";
+import InstituteContainer from "../../Component/institute/instituteContainer";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -31,7 +32,6 @@ const Home = () => {
 
   return (
     <div className="main">
-      <TopBar activeClass="activehome" button="Join" />
       <div className="home">
         <Carousel
           style={{ height: "100%", width: "100%" }}
@@ -69,107 +69,61 @@ const Home = () => {
 
           <Store />
         </Carousel>
-        {/* <div className="tabs">
-          <button
-            className="instituteButton"
-            onClick={() => navigate("/insitute")}
-          >
-            isttaa Institute
-          </button>
-          <button
-            className="solutionButton"
-            onClick={() => navigate("/solutions")}
-          >
-            isttaa Solutions
-          </button>
-          <button className="shopButton" onClick={() => navigate("/it-shop")}>
-            isttaa IT Shop
-          </button>
-        </div> */}
       </div>
+      <div className="PurposeMission">
+        <div className="box">
+          <h2>Purpose & Mission</h2>
+          <p>
+            ISTTAA Company's Purpose & Mission Are To Provide All World Services
+            In One Place. Currently, ISTTAA Offers IT Training & Services.
+          </p>
+        </div>
+      </div>
+
+      <DailyUpdate />
+
+      <div className="PurposeMission" style={{ margin: "50px 0px" }}>
+        <div className="box">
+          <h2>Our Project’s Detail</h2>
+        </div>
+      </div>
+
       {/* Institute Component */}
       {WebsiteData?.map((item) => (
         <InstituteContainer item={item} />
       ))}
 
-      {/* Daily updates  */}
-      {/* <div className="daily-updates">
-        <h2> Daily Update's </h2>
-        <div className="main-content">
-          <div className="content">
-            <h2>Features of Our Training</h2>
-            <h2>
-              Get Addmission <br />
-              Get Success
-            </h2>
-          </div>
-          <div className="content">
-            <h2>Features of Our Training</h2>
-            <h2>
-              Get Addmission <br />
-              Get Success
-            </h2>
-          </div>
-          <div className="content">
-            <h2>Features of Our Training</h2>
-            <h2>
-              Get Addmission <br />
-              Get Success
-            </h2>
-          </div>
+      <div className="PurposeMission" style={{ margin: "50px 0px" }}>
+        <div className="box">
+          <h2>Build Your Dreams With Isttaa</h2>
         </div>
-      </div> */}
+      </div>
 
       {/* founder */}
       <div className="CEo">
         <div className="founder">
           <div className="welcome-right">
-            <img src={CEo} />
+            <img src="https://ohanadoc.s3.amazonaws.com/images/Group+263.svg" />
           </div>
           <div className="welcome-left">
             <p className="welcome-text">Founder & CEO</p>
             <h2>Tayyab Imtiaz</h2>
             <p className="welcome-des">
-              As the Founder & CEO of isttaa, I am thrilled to lead a company
-              that offers comprehensive IT Training, cutting-edge Software House
-              solutions, and an IT Shop, catering to all your technology needs.
-              Our commitment to excellence drives us to stay ahead in the
-              ever-evolving tech world, delivering personalized services to
-              empower individuals and businesses alike. At isttaa, innovation is
-              our fuel, and customer satisfaction is our goal. With gratitude to
-              our clients and dedication from our team, we look forward to
-              shaping a brighter future together. Thank be a part of our
-              journey.
+              As The Founder & CEO Of ISTTAA, I Am Thrilled To Lead A Company
+              That Offers Comprehensive IT Training, Cutting-edge Software House
+              Solutions, And An IT Store, Catering To All Your Technology Needs.
+              Our Commitment To Excellence Drives Us To Stay Ahead In The
+              Ever-evolving Tech World, Delivering Personalized Services To
+              Empower Individuals And Businesses Alike. At ISTTAA, Innovation Is
+              Our Fuel, And Customer Satisfaction Is Our Goal. With Gratitude To
+              Our Clients And Dedication From Our Team, We Look Forward To
+              Shaping A Brighter Future Together. Thank Be A Part Of Our
+              Journey.
             </p>
             <button> CONNECT </button>
           </div>
         </div>
       </div>
-
-      {/* Email Updates */}
-
-      {/* <div className="Email">
-        <div className="email-box">
-          <div className="email-text">
-            <p>
-              Want Us to Email you About
-              <br /> Special Offers & Updates?
-            </p>
-          </div>
-          <Form form={form} onFinish={handleSubmit} className="email-input">
-
-            <Form.Item style={{ margin: "0px", width: "100%" }} name="subcription" rules={[{ required: true, message: "please enter valid email" }]}>
-              <Input
-                type="email"
-                className="ant-input-affix-wrapper"
-                placeholder="your email"
-              />
-            </Form.Item>
-            <button type='submit'>Subscribe</button>
-          </Form>
-          <div></div>
-        </div>
-      </div> */}
 
       {/* Start Buisness With isttaa */}
 
@@ -184,9 +138,19 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Footer */}
-
-      <Footer />
+      <div className="CEo" style={{height:"auto"}} >
+        <div className="founder">
+          <div className="welcome-left" style={{padding:"50px 0px",width:"50%"}}>
+            <h2>Head Office</h2>
+            <p className="welcome-text">Lahore, Pakistan</p>
+            <p className="welcome-des">ARFA Software Technology Park</p>
+            <Button style={{backgroundColor:"#414143",color:"#fff"}} type='primary' > Get Location </Button>
+          </div>
+          <div className="welcome-right" style={{width:"50%"}}>
+            <img src="https://ohanadoc.s3.amazonaws.com/images/ARFA+Building-01+1.svg" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

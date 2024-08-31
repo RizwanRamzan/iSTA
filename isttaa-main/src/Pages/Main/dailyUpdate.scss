@@ -1,0 +1,26 @@
+.dailyUpdates {
+  background-color: #f1f1f1;
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .box {
+    width: 90%;
+    padding: 30px 0px;
+
+    h2 {
+      font-weight: 700;
+      color: #424143;
+      margin: 0px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.carousel .thumbs {
+  text-align: center !important;
+  margin-bottom: 0px !important;
+}

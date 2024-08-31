@@ -1,3 +1,5 @@
+import { Button } from "antd";
+import { EduIcon, SolutionIcon, StroeIcon } from "../../assets";
 import "./institute.scss";
 
 const InstituteContainer = ({ item }) => {
@@ -9,47 +11,63 @@ const InstituteContainer = ({ item }) => {
         (item?.name == "isttaa IT Shop" && "shopContainer")
       }
     >
-      <div className="instituteHeader">
-        <div className="instituteSubHeader">
-          <p className="istaText ">{item?.name}</p>
-          <p className="explore">Explore</p>
-        </div>
-      </div>
       <div className="institute-text-area">
         <div className="institute-left">
-          {item?.name == "iSTA Institute" && (
-            <p className="institute-text">
-              Pakistan’s No.1
-              <br />
-              IT Training Institute
-            </p>
-          )}
-          {item?.name == "iSTA Solutions" && (
-            <p className="institute-text">
-              Unlock the Ideal
-              <br />
-              IT Service, Right Now!
-            </p>
-          )}
-          {item?.name == "iSTA IT Shop" && (
-            <p className="institute-text">
-              Your Source for
-              <br />
-              IT Accessories
-            </p>
-          )}
           <div className="buttons">
-            <p className="srevice">Services</p>
-            <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-              <button>{item?.button1}</button>
-              <button>{item?.button2}</button>
-              {item?.button3 && <button>{item?.button3}</button>}
-            </div>
+            <img
+              width={"50%"}
+              src={
+                (item?.name == "isttaa Institute" && EduIcon) ||
+                (item?.name == "isttaa Solutions" && SolutionIcon) ||
+                (item?.name == "isttaa IT Shop" && StroeIcon)
+              }
+              alt=""
+            />
           </div>
-          <p className="institute-des">{item?.des}</p>
+          {item?.name == "isttaa Institute" && (
+            <>
+              <h2 className="EduTitle">
+                <span>Learn</span> To <span>Earn</span>
+                <br /> With Us!
+              </h2>
+              <Button type="primary" style={{ width: "200px" }}>
+                Visit Website
+              </Button>
+            </>
+          )}
+
+          {item?.name == "isttaa Solutions" && (
+            <>
+              <h2 className="SolutionTitle">
+                Your <span>Vision</span> <br />
+                <span>Our </span>
+                Code
+              </h2>
+              <Button
+                type="primary"
+                style={{ width: "200px", backgroundColor: "#2DA14B" }}
+              >
+                Visit Website
+              </Button>
+            </>
+          )}
+
+          {item?.name == "isttaa IT Shop" && (
+            <>
+              <h2 className="StoreTitle">
+                Shop <span>Smart</span> <br />
+                <span>Shop </span> Online
+              </h2>
+              <Button type="primary" style={{ width: "200px",backgroundColor: "#FF9900" }}>
+                Visit Website
+              </Button>
+            </>
+          )}
         </div>
         <div className="institute-right">
-          <img src={item?.image} />
+          <div className="box">
+            <img src={item?.image} />
+          </div>
         </div>
       </div>
     </div>

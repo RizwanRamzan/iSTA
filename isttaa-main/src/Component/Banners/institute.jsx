@@ -3,7 +3,7 @@ import { Insitute_img } from '../../assets'
 
 const InstituteBanner = () => {
     return (
-        <a href='https://64fe41cb8667876d1f17be27--stupendous-brioche-87051a.netlify.app/' target='_blank'>
+        <a href='https://institute.isttaa.com/' target='_blank'>
             <div className="insitute_wrapper" style={{ height: "90vh" }}>
                 <div className="insitute" style={{ height: "100%" }}>
                     <div className="insitute_left">

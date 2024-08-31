@@ -32,238 +32,237 @@ import Ista_Packages from "../Component/ista-solutions-com/ista_solution_package
 import Solution_Freelancer from "../Component/ista-solutions-com/solution_freelancer";
 
 const ApplicationRoutes = () => {
-  function RequireAuth({ children }) {
-    return <Layout>{children}</Layout>;
-  }
 
   return (
-    <Routes>
-      <Route path={"*"} element={<Navigate to="/home" replace />} />
-      <Route
-        path="/home"
-        element={
-          <div className="layout">
-            <Home />
-          </div>
-        }
-      />
-      <Route
-        path="/about"
-        element={
-          <div className="layout">
-            <About />
-          </div>
-        }
-      />
-      <Route
-        path="/contact"
-        element={
-          <div className="layout">
-            <Contact />
-          </div>
-        }
-      />
-      <Route
-        path="/joinig"
-        element={
-          <div className="layout">
-            <JoiningForm />
-          </div>
-        }
-      />
-      <Route
-        path="/start-business"
-        element={
-          <div className="layout">
-            <StartBuisness />
-          </div>
-        }
-      />
-      <Route
-        path="/insitute"
-        element={
-          <div className="layout">
-            <Insitute />
-          </div>
-        }
-      />
-      <Route
-        path="/art-and-design"
-        element={
-          <div className="layout mylayout">
-            <ArtAndDesign />
-          </div>
-        }
-      />
-      <Route
-        path="/development"
-        element={
-          <div className="layout mylayout">
-            <Development />
-          </div>
-        }
-      />
-      <Route
-        path="/marketing"
-        element={
-          <div className="layout mylayout">
-            <Marketing />
-          </div>
-        }
-      />
-      <Route
-        path="/basic"
-        element={
-          <div className="layout mylayout">
-            <Basic />
-          </div>
-        }
-      />
-      <Route
-        path="/intermediate"
-        element={
-          <div className="layout mylayout">
-            <Intermediate />
-          </div>
-        }
-      />
-      <Route
-        path="/advance"
-        element={
-          <div className="layout mylayout">
-            <Advance />
-          </div>
-        }
-      />
-      <Route
-        path="/full-stack-designing"
-        element={
-          <div className="layout mylayout">
-            <Full_stack_designing />
-          </div>
-        }
-      />
-      <Route
-        path="/graphics-designing"
-        element={
-          <div className="layout mylayout">
-            <Graphics_designing />
-          </div>
-        }
-      />
-      <Route
-        path="/graphics-designing-basic"
-        element={
-          <div className="layout mylayout">
-            <Graphics_Designing_Basic />
-          </div>
-        }
-      />
-      <Route
-        path="/graphics-designing-04"
-        element={
-          <div className="layout mylayout">
-            <Graphics_Designing_04 />
-          </div>
-        }
-      />
-      <Route
-        path="/uiux-designing"
-        element={
-          <div className="layout mylayout">
-            <UiUx_designing />
-          </div>
-        }
-      />
-      <Route
-        path="/advertising-designing"
-        element={
-          <div className="layout mylayout">
-            <Advertising_Designing />
-          </div>
-        }
-      />
-      <Route
-        path="/adobe-illustrator"
-        element={
-          <div className="layout mylayout">
-            <Adobe_Illustrator />
-          </div>
-        }
-      />
-      <Route
-        path="/adobe-photoshop"
-        element={
-          <div className="layout mylayout">
-            <Adobe_Photoshop />
-          </div>
-        }
-      />
-      <Route
-        path="/diploma-graphics-design"
-        element={
-          <div className="layout mylayout">
-            <Diploma_Graphics_Design />
-          </div>
-        }
-      />
-      <Route
-        path="/diploma-computer-science"
-        element={
-          <div className="layout mylayout">
-            <Diploma_Computer_Science />
-          </div>
-        }
-      />
-      <Route
-        path="/solutions"
-        element={
-          <div className="layout mylayout">
-            <IstaSolutions />
-          </div>
-        }
-      />
-      <Route
-        path="/graphics-design"
-        element={
-          <div className="layout mylayout">
-            <Graphics_Design />
-          </div>
-        }
-      />
-      <Route
-        path="/it-shop"
-        element={
-          <div className="layout mylayout">
-            <IT_Shop />
-          </div>
-        }
-      />
-      <Route
-        path="/laptop"
-        element={
-          <div className="layout mylayout">
-            <Laptop />
-          </div>
-        }
-      />
-      <Route
-        path="/packages"
-        element={
-          <div className="layout mylayout">
-            <Ista_Packages />
-          </div>
-        }
-      />
-      <Route
-        path="/solution-freelancer"
-        element={
-          <div className="layout mylayout">
-            <Solution_Freelancer />
-          </div>
-        }
-      />
-    </Routes>
+    <Layout>
+      <Routes>
+        <Route path={"*"} element={<Navigate to="/home" replace />} />
+        <Route
+          path="/home"
+          element={
+            <div className="layout">
+              <Home />
+            </div>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <div className="layout">
+              <About />
+            </div>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <div className="layout">
+              <Contact />
+            </div>
+          }
+        />
+        <Route
+          path="/joinig"
+          element={
+            <div className="layout">
+              <JoiningForm />
+            </div>
+          }
+        />
+        <Route
+          path="/start-business"
+          element={
+            <div className="layout">
+              <StartBuisness />
+            </div>
+          }
+        />
+        <Route
+          path="/insitute"
+          element={
+            <div className="layout">
+              <Insitute />
+            </div>
+          }
+        />
+        <Route
+          path="/art-and-design"
+          element={
+            <div className="layout mylayout">
+              <ArtAndDesign />
+            </div>
+          }
+        />
+        <Route
+          path="/development"
+          element={
+            <div className="layout mylayout">
+              <Development />
+            </div>
+          }
+        />
+        <Route
+          path="/marketing"
+          element={
+            <div className="layout mylayout">
+              <Marketing />
+            </div>
+          }
+        />
+        <Route
+          path="/basic"
+          element={
+            <div className="layout mylayout">
+              <Basic />
+            </div>
+          }
+        />
+        <Route
+          path="/intermediate"
+          element={
+            <div className="layout mylayout">
+              <Intermediate />
+            </div>
+          }
+        />
+        <Route
+          path="/advance"
+          element={
+            <div className="layout mylayout">
+              <Advance />
+            </div>
+          }
+        />
+        <Route
+          path="/full-stack-designing"
+          element={
+            <div className="layout mylayout">
+              <Full_stack_designing />
+            </div>
+          }
+        />
+        <Route
+          path="/graphics-designing"
+          element={
+            <div className="layout mylayout">
+              <Graphics_designing />
+            </div>
+          }
+        />
+        <Route
+          path="/graphics-designing-basic"
+          element={
+            <div className="layout mylayout">
+              <Graphics_Designing_Basic />
+            </div>
+          }
+        />
+        <Route
+          path="/graphics-designing-04"
+          element={
+            <div className="layout mylayout">
+              <Graphics_Designing_04 />
+            </div>
+          }
+        />
+        <Route
+          path="/uiux-designing"
+          element={
+            <div className="layout mylayout">
+              <UiUx_designing />
+            </div>
+          }
+        />
+        <Route
+          path="/advertising-designing"
+          element={
+            <div className="layout mylayout">
+              <Advertising_Designing />
+            </div>
+          }
+        />
+        <Route
+          path="/adobe-illustrator"
+          element={
+            <div className="layout mylayout">
+              <Adobe_Illustrator />
+            </div>
+          }
+        />
+        <Route
+          path="/adobe-photoshop"
+          element={
+            <div className="layout mylayout">
+              <Adobe_Photoshop />
+            </div>
+          }
+        />
+        <Route
+          path="/diploma-graphics-design"
+          element={
+            <div className="layout mylayout">
+              <Diploma_Graphics_Design />
+            </div>
+          }
+        />
+        <Route
+          path="/diploma-computer-science"
+          element={
+            <div className="layout mylayout">
+              <Diploma_Computer_Science />
+            </div>
+          }
+        />
+        <Route
+          path="/solutions"
+          element={
+            <div className="layout mylayout">
+              <IstaSolutions />
+            </div>
+          }
+        />
+        <Route
+          path="/graphics-design"
+          element={
+            <div className="layout mylayout">
+              <Graphics_Design />
+            </div>
+          }
+        />
+        <Route
+          path="/it-shop"
+          element={
+            <div className="layout mylayout">
+              <IT_Shop />
+            </div>
+          }
+        />
+        <Route
+          path="/laptop"
+          element={
+            <div className="layout mylayout">
+              <Laptop />
+            </div>
+          }
+        />
+        <Route
+          path="/packages"
+          element={
+            <div className="layout mylayout">
+              <Ista_Packages />
+            </div>
+          }
+        />
+        <Route
+          path="/solution-freelancer"
+          element={
+            <div className="layout mylayout">
+              <Solution_Freelancer />
+            </div>
+          }
+        />
+      </Routes>
+    </Layout>
   );
 };
 
